@@ -1,7 +1,6 @@
 import 'dart:async';
 
 import 'package:bloc/bloc.dart';
-import 'package:ecommerce/models/payment_method_model.dart';
 import 'package:equatable/equatable.dart';
 import '/blocs/blocs.dart';
 import '/models/models.dart';
@@ -15,6 +14,7 @@ class CheckoutBloc extends Bloc<CheckoutEvent, CheckoutState> {
   final PaymentBloc _paymentBloc;
   final CheckoutRepository _checkoutRepository;
   StreamSubscription? _cartSubscription;
+  // ignore: _paymentSubscription
   StreamSubscription? _paymentSubscription;
   StreamSubscription? _checkoutSubscription;
 

@@ -40,10 +40,10 @@ class GooglePay extends StatelessWidget {
     return SizedBox(
       width: MediaQuery.of(context).size.width - 50,
       child: GooglePayButton(
-        paymentConfigurationAsset: 'payment_profile_google_pay.json',
+        //paymentConfigurationAsset: 'payment_profile_google_pay.json',
         onPaymentResult: onGooglePayResult,
         paymentItems: _paymentItems,
-        style: GooglePayButtonStyle.white,
+        //style: GooglePayButtonStyle.white,
         type: GooglePayButtonType.pay,
         margin: const EdgeInsets.only(top: 10),
         loadingIndicator: const CircularProgressIndicator(),

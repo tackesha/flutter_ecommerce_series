@@ -35,7 +35,7 @@ class CheckoutScreen extends StatelessWidget {
                 children: [
                   Text(
                     'CUSTOMER INFORMATION',
-                    style: Theme.of(context).textTheme.headline3,
+                    style: Theme.of(context).textTheme.displaySmall,
                   ),
                   CustomTextFormField(
                     title: 'Email',
@@ -56,7 +56,7 @@ class CheckoutScreen extends StatelessWidget {
                   SizedBox(height: 20),
                   Text(
                     'DELIVERY INFORMATION',
-                    style: Theme.of(context).textTheme.headline3,
+                    style: Theme.of(context).textTheme.displaySmall,
                   ),
                   CustomTextFormField(
                     title: 'Address',
@@ -110,7 +110,7 @@ class CheckoutScreen extends StatelessWidget {
                               'SELECT A PAYMENT METHOD',
                               style: Theme.of(context)
                                   .textTheme
-                                  .headline3!
+                                  .displaySmall!
                                   .copyWith(color: Colors.white),
                             ),
                           ),
@@ -128,7 +128,7 @@ class CheckoutScreen extends StatelessWidget {
                   SizedBox(height: 20),
                   Text(
                     'ORDER SUMMARY',
-                    style: Theme.of(context).textTheme.headline3,
+                    style: Theme.of(context).textTheme.displaySmall,
                   ),
                   OrderSummary()
                 ],

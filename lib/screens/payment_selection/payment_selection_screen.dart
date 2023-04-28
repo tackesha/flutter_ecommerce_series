@@ -52,7 +52,7 @@ class PaymentSelection extends StatelessWidget {
                 const SizedBox(height: 10),
                 Platform.isAndroid
                     ? RawGooglePayButton(
-                        style: GooglePayButtonStyle.black,
+                        //style: GooglePayButtonStyle.black,
                         type: GooglePayButtonType.pay,
                         onPressed: () {
                           context.read<PaymentBloc>().add(

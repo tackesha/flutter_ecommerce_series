@@ -20,7 +20,7 @@ class CustomNavBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return BottomAppBar(
-      color: Colors.black,
+      color: Colors.redAccent,
       child: Container(
         height: 70,
         child: (screen == '/product')
@@ -121,12 +121,12 @@ class AddToCartNavBar extends StatelessWidget {
                   Navigator.pushNamed(context, '/cart');
                 },
                 style: ElevatedButton.styleFrom(
-                  primary: Colors.white,
+                  backgroundColor: Colors.white,
                   shape: RoundedRectangleBorder(),
                 ),
                 child: Text(
                   'ADD TO CART',
-                  style: Theme.of(context).textTheme.headline3,
+                  style: Theme.of(context).textTheme.displaySmall,
                 ),
               );
             }
@@ -154,12 +154,12 @@ class GoToCheckoutNavBar extends StatelessWidget {
             Navigator.pushNamed(context, '/checkout');
           },
           style: ElevatedButton.styleFrom(
-            primary: Colors.white,
+            backgroundColor: Colors.white,
             shape: RoundedRectangleBorder(),
           ),
           child: Text(
             'GO TO CHECKOUT',
-            style: Theme.of(context).textTheme.headline3,
+            style: Theme.of(context).textTheme.displaySmall,
           ),
         ),
       ],
@@ -194,7 +194,7 @@ class OrderNowNavBar extends StatelessWidget {
                     'Pay with Credit Card',
                     style: Theme.of(context)
                         .textTheme
-                        .headline4!
+                        .headlineMedium!
                         .copyWith(color: Colors.white),
                   ),
                 );
@@ -217,10 +217,10 @@ class OrderNowNavBar extends StatelessWidget {
                   onPressed: () {
                     Navigator.pushNamed(context, '/payment-selection');
                   },
-                  style: ElevatedButton.styleFrom(primary: Colors.white),
+                  style: ElevatedButton.styleFrom(backgroundColor: Colors.white),
                   child: Text(
                     'CHOOSE PAYMENT',
-                    style: Theme.of(context).textTheme.headline3,
+                    style: Theme.of(context).textTheme.displaySmall,
                   ),
                 );
               }

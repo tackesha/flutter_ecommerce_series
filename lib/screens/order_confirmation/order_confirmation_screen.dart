@@ -47,7 +47,7 @@ class OrderConfirmation extends StatelessWidget {
                     textAlign: TextAlign.center,
                     style: Theme.of(context)
                         .textTheme
-                        .headline3!
+                        .displaySmall!
                         .copyWith(color: Colors.white),
                   ),
                 ),
@@ -60,23 +60,23 @@ class OrderConfirmation extends StatelessWidget {
                 children: [
                   Text(
                     'Hi Massimo,',
-                    style: Theme.of(context).textTheme.headline5,
+                    style: Theme.of(context).textTheme.headlineSmall,
                   ),
                   SizedBox(height: 10),
                   Text(
                     'Thank you for purchasing on Zero To Unicorn.',
-                    style: Theme.of(context).textTheme.headline6,
+                    style: Theme.of(context).textTheme.titleLarge,
                   ),
                   SizedBox(height: 20),
                   Text(
                     'ORDER CODE: #k321-ekd3',
-                    style: Theme.of(context).textTheme.headline5,
+                    style: Theme.of(context).textTheme.headlineSmall,
                   ),
                   OrderSummary(),
                   SizedBox(height: 20),
                   Text(
                     'ORDER DETAILS',
-                    style: Theme.of(context).textTheme.headline5,
+                    style: Theme.of(context).textTheme.headlineSmall,
                   ),
                   Divider(thickness: 2),
                   SizedBox(height: 5),

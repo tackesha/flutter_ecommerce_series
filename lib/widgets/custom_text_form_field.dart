@@ -20,7 +20,7 @@ class CustomTextFormField extends StatelessWidget {
             width: 75,
             child: Text(
               title,
-              style: Theme.of(context).textTheme.bodyText1,
+              style: Theme.of(context).textTheme.bodyLarge,
             ),
           ),
           Expanded(

@@ -202,7 +202,7 @@ class ProductInformation extends StatelessWidget {
                 maxLines: 1,
                 style: Theme.of(context)
                     .textTheme
-                    .headline5!
+                    .headlineSmall!
                     .copyWith(color: fontColor),
               ),
             ),
@@ -210,7 +210,7 @@ class ProductInformation extends StatelessWidget {
               '\$${product.price}',
               style: Theme.of(context)
                   .textTheme
-                  .headline6!
+                  .titleLarge!
                   .copyWith(color: fontColor),
             ),
           ],
@@ -220,7 +220,7 @@ class ProductInformation extends StatelessWidget {
                 'Qty. $quantity',
                 style: Theme.of(context)
                     .textTheme
-                    .headline4!
+                    .headlineMedium!
                     .copyWith(color: fontColor),
               )
             : const SizedBox(),
@@ -306,7 +306,7 @@ class ProductActions extends StatelessWidget {
 
           Text productQuantity = Text(
             '$quantity',
-            style: Theme.of(context).textTheme.headline4,
+            style: Theme.of(context).textTheme.headlineMedium,
           );
 
           if (isCatalog) {
